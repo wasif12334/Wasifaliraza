@@ -26,6 +26,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
 }
 nav .logo{
     color: aliceblue;
@@ -34,9 +35,10 @@ nav .logo{
     font-size: 18px;
     font-weight: 600;
     flex-basis: 1;
+    text-shadow: 1px 1px 20px  #fff;
 }
 nav .links{
-    flex-basis: 2;
+    flex-basis: 50%;
     margin-left: 800px;
 }
 nav .links ul{
@@ -49,7 +51,76 @@ nav .links ul li{
     list-style: none;
     color: blanchedalmond;
 }
+
+
 nav .links ul  li a{
     text-decoration: none;
     color: #02E2F4;
+}
+nav .links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #cac9c9;
+    display: block;
+    margin: auto;
+    transition: 0.75s ;
+}
+nav .links ul li:hover::after{
+width: 100%;
+}
+.links i,.nav-icon i{
+ display: none;
+}
+
+
+/*-----------------------------Responsiveness----------------------------*/
+@media (max-width:700px){
+    nav .logo{
+        font-size: 25px;
+        flex-basis: 50%;
+
+    }   
+    nav .links  ul {
+        display: block;
+        padding: 30px;
+    }
+    nav .links ul li{
+
+        padding: 10px 20px ;
+        animation:navlinksmovement 2s ease-in ;
+
+    }
+    .links {
+        position: absolute;
+        background: #1f232db0;
+        height: 140vh;
+        width: 200px;
+        border-left: 2px solid gray;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: -3;
+        transition: 1s;;
+    }
+    nav .fa{
+        display: block;
+        color:#fff;
+        margin: 1px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+ 
+}
+/*______________________Animation_________________________*/
+/*Nav-links-----*/
+@keyframes navlinksmovement{
+from{
+    opacity: 0;
+    transform: translateX(200px);
+}
+to{
+    opacity: 1;
+    transform: translateX(0px);
+}
 }
