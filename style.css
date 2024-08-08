@@ -14,9 +14,10 @@ body{
 }
 /*----------Header-----------------*/
 header{
-    width: 100%;
+    width: 95%;
     height: 80px;
-    border: 1px solid wheat;
+    margin: 0px 2%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.182);
 }
 /*----------Nav -bar-----------------*/
 nav{
@@ -46,6 +47,7 @@ nav .links ul{
 nav .links ul li{
     margin-right: 25px;
     list-style: none;
+    color: blanchedalmond;
 }
 nav .links ul  li a{
     text-decoration: none;
