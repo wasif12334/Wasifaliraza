@@ -1,225 +1,301 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: serif;
-    font-family: "Manrope", sans-serif;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: serif;
+font-family: "Manrope", sans-serif;
 }
-body{
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100vh;
-    background: #1F232D;
+
+body {
+scroll-behavior: smooth;
+width: 100%;
+height: 100vh;
+background: #1F232D;
 }
+
 /*----------Header-----------------*/
-header{
-    max-width: 80%;
-    height: 80px;
-    margin: 0px 2%;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.182);
+header {
+width: 95%;
+height: 80px;
+margin: 0px 2%;
 }
+
 /*----------Nav -bar-----------------*/
-nav{
- max-width: 80%;
-    height: 79px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- 
+nav {
+width: 89%;
+height: 79px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
 }
-nav .logo{
-    color: aliceblue;
-    margin-left: 20px;
-    letter-spacing: 9px;
-    font-size: 18px;
-    font-weight: 600;
-    flex-basis: 1;
-    text-shadow: 1px 1px 20px  #fff;
+
+nav .logo {
+color: aliceblue;
+margin-left: 20px;
+letter-spacing: 9px;
+font-size: 18px;
+font-weight: 600;
+flex-basis: 1;
+text-shadow: 1px 1px 20px #fff;
 }
-nav .links{
-    flex-basis: 50%;
-    margin-left: 800px;
+.logo  img{
+    display: none;
+    width: 100px;
+    height: 100px;
 }
-nav .links ul{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+
+nav .links {
+flex-basis: 50%;
+margin-left: 800px;
 }
-nav .links ul li{
-    margin-right: 25px;
-    list-style: none;
-    color: blanchedalmond;
-    cursor: pointer;
+
+nav .links ul {
+display: flex;
+justify-content: end;
+align-items: center;
+}
+
+nav .links ul li {
+margin-right: 25px;
+list-style: none;
+color: blanchedalmond;
+cursor: pointer;
 }
 
 
-nav .links ul  li a{
-    text-decoration: none;
-    color: #02E2F4;
-    
+nav .links ul li a {
+text-decoration: none;
+color: #02E2F4;
+
 }
-nav .links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #cac9c9;
-    display: block;
-    margin: auto;
-    transition: 0.75s ;
+
+nav .links ul li::after {
+content: '';
+width: 0%;
+height: 2px;
+background: #cac9c9;
+display: block;
+margin: auto;
+transition: 0.75s;
 }
-nav .links ul li:hover::after{
+
+nav .links ul li:hover::after {
 width: 100%;
 }
-.links i,.nav-icon i{
- display: none;
+
+.links i,
+.nav-icon i {
+display: none;
 }
+
 /*------------------Home - Section------------*/
-#home{
-    max-width:  80%;
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+#home {
+width: 100%;
+height: 90%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
 }
 /*---------------Text-subsection----------------*/
-.Text{
-    flex-basis: 45%;
-    
-    height: 85%;
-    margin: auto;
-    color: white;
-    padding: 40px;
-    line-height: 35px;
- 
+.Text {
+flex-basis: 45%;
+height: 85%;
+margin: auto;
+color: white;
+padding: 40px;
+line-height: 35px;
 }
-.Text h1{
-    font-size: 30px;
+.Text h1 {
+font-size: 30px;
+margin-bottom: 15px;
 }
-.Text h1 img{
-    width: 35px;
-    height: 40px;
-    margin-left: 5px;
+.Text h1 img {
+width: 35px;
+height: 40px;
+margin-left: 5px;
 }
-.Text h2{
-    font-size: 30px;
-    font-weight: 600;
+.Text h2 {
+font-size: 30px;
+font-weight: 600;   
 }
-.Text h3{
-    margin-bottom: 15px;
-    font-size: 25px;
-    display: inline-block;
-    
+.Text h3 {
+margin-bottom: 15px;
+font-size: 25px;
 }
-#typinganimation{
-    overflow: hidden;
-    animation: typing  4s steps(26,end) infinite alternate;
-    white-space: nowrap;
-    border-right: 2px solid wheat;
-    color: #02E2F4;
-    padding-right: 4px;
+.Text  span {
+color: #02E2F4;
+padding-right: 4px;
 }
 
-.text p{
-    font-size: 10px;
-    
+.Text p {                                       
+font-size: 20px; 
+font-weight: 200;
+
 }
-.home-icons{
-    margin-top: 15px;
+
+.home-icons {
+margin-top: 15px;
 }
-.home-icons a{
-    color: #02E2F4;
-    margin: 0px 5px;
-    font-size: 25px;
-    text-shadow: 3px 3px 23px #02E2F4;
+
+.home-icons a {
+color: #02E2F4;
+margin: 0px 5px;
+font-size: 25px;
+text-shadow: 3px 3px 23px #02E2F4;
 }
+
 .btn {
-    background: transparent;
-    padding: 5px 19px;
-    border-radius: 40px;
-    color: #02E2F4;
-    margin-top: 15px;
-    font-size: 16px;
-    border: 0.3px solid #02E2F4;
-    font-weight: bold;
+background: transparent;
+padding: 5px 19px;
+border-radius: 40px;
+color: #02E2F4;
+margin-top: 15px;
+font-size: 16px;
+border: 0.3px solid #02E2F4;
+font-weight: bold;
 }
-.btn:hover{
-    color: white;
-    transition: 0.4s;
-    background: #02E2F4;
-    box-shadow: 1px 1px 12px  #02E2F4,-1px -1px 12px  #02E2F4;
+
+.btn:hover {
+color: white;
+transition: 0.4s;
+background: #02E2F4;
+box-shadow: 1px 1px 12px #02E2F4, -1px -1px 12px #02E2F4;
 }
+
 /*---------------Image-subsection----------------*/
-.Image{
-    flex-basis: 45%;
-    height: 85%;
-    margin: auto;
-    position: relative;
-    right: -30%;
-    
+.Image {
+flex-basis: 45%;
+height: 85%;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: start;
+}
+
+.Image img {
+margin-top: 50px;
+border-radius: 50%;
+box-shadow: 1px 10px 12px #02E2F4;
+}
+
+/*-----------------------------Responsiveness----------------------------*/
+@media (max-width:700px) {
+    *{
+        overflow-x: h;
+    }
+/*--------------NAv-bar---------------*/
+nav .logo {
+font-size: 25px;
+flex-basis: 50%;
+
+}
+.logo h2{
+    display: none;
+}
+.logo img {
+    display: inline;
+    width: 75px;
+    height: 75px;
+    border:1px solid white;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+nav .links ul {
+display: block;
+padding: 30px;
+}
+
+nav .links ul li {
+
+padding: 10px 20px;
+animation: navlinksmovement 2s ease-in;
+
+}
+
+.links {
+position: absolute;
+background: #1f232db0;
+height: 140vh;
+width: 200px;
+border-left: 2px solid gray;
+top: 0;
+right: -200px;
+text-align: left;
+z-index: -3;
+transition: 1s;
+;
+}
+
+nav .fa {
+display: block;
+color: #fff;
+margin: 1px;
+cursor: pointer;
+font-size: 25px;
+}
+
+/*--------------Home section---------------*/
+#home{
+    width: 100%;
+    height: 10vh;
 }
 .Image img{
-    margin-top: 50px;
-    border-radius:50% ;
-    box-shadow: 1px 10px 12px #02E2F4;
+  display: none;
 }
-/*-----------------------------Responsiveness----------------------------*/
-@media (max-width:700px){
-    nav .logo{
-        font-size: 25px;
-        flex-basis: 50%;
-
-    }   
-    nav .links  ul {
-        display: block;
-        padding: 30px;
-    }
-    nav .links ul li{
-
-        padding: 10px 20px ;
-        animation:navlinksmovement 2s ease-in ;
-
-    }
-    .links {
-        position: absolute;
-        background: #1f232db0;
-        height: 140vh;
-        width: 200px;
-        border-left: 2px solid gray;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: -3;
-        transition: 1s;;
-    }
-    nav .fa{
-        display: block;
-        color:#fff;
-        margin: 1px;
-        cursor: pointer;
-        font-size: 25px;
-    }
- 
+.Text{
+    flex-basis: 100%;
+    
 }
+.Text h1{
+    font-size: 45px;
+    
+}
+.Text h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.Text h3{
+    font-size: 35px;
+}
+.home-icons i{
+    font-size: 40px;
+    margin: 0 10px;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+}
+
 /*______________________Animation_________________________*/
 /*Nav-links-----*/
-@keyframes navlinksmovement{
-from{
-    opacity: 0;
-    transform: translateX(200px);
+@keyframes navlinksmovement {
+from {
+opacity: 0;
+transform: translateX(200px);
 }
-to{
-    opacity: 1;
-    transform: translateX(0px);
+
+to {
+opacity: 1;
+transform: translateX(0px);
 }
 }
+
 /*------ Text----------*/
 @keyframes typing {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 100%;
-    }
+from{
+width: 0%;
+}
+
+to {
+width: 100%;
+}
 }
