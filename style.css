@@ -180,6 +180,8 @@ align-items: start;
 margin-top: 50px;
 border-radius: 50%;
 box-shadow: 1px 10px 12px #02E2F4;
+animation: onenter 4s  ease-in 1s;
+transition: 0.1s;
 }
 
 /*-----------------------------Responsiveness----------------------------*/
@@ -298,4 +300,17 @@ width: 0%;
 to {
 width: 100%;
 }
+}
+/*-----HOme-Image--------*/
+@keyframes onenter {
+    0%{
+        opacity: 0.2;
+     transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+     transform: translateX(0px);
+
+    }
+    
 }
