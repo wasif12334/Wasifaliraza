@@ -94,7 +94,7 @@ display: none;
 /*------------------Home - Section------------*/
 #home {
 width: 100%;
-height: 90%;
+height: 550px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -180,10 +180,93 @@ align-items: start;
 margin-top: 50px;
 border-radius: 50%;
 box-shadow: 1px 10px 12px #02E2F4;
-animation: onenter 4s  ease-in 1s;
-transition: 0.1s;
-}
+animation: onenter 1s  ease-in 0s;
 
+}
+/*----------About------*/
+.about-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250px;
+    flex-wrap: wrap;
+    height: 80vh;
+    color: #fff;
+}
+.about-image{
+   flex-basis :30%;
+ margin-top: 50px;
+  
+    height: 100%;
+    text-align: center;
+}
+.about-content{
+ flex-basis: 45%;
+
+    height: 100%;
+}
+.about-content h1{
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 10px rgba(245, 222, 179, 0.637);
+    font-size: 30px;
+}
+.about-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #02E2F4;
+}
+.about-content marquee {
+    width: 100%;
+    height: 200px;
+    margin: 19px 0;
+    opacity: 0.6;
+    color:whitesmoke;
+}
+/*--------------Skills-------------*/
+.skills{
+    width: 100%;
+    height: 57vh;
+    color: #cac9c9;
+
+}
+.main-box{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.skills h1{
+padding-left: 45%;    
+color: white;
+font-weight: 700;
+text-shadow: 1px 1px 10px rgba(245, 222, 179, 0.637);
+font-size: 30px;
+}
+.box{
+    margin: 10px 19px;
+    border: 1px solid #191b1b;
+    box-shadow: inset 1px 1px 15px #05050593,1px 1px 15px #5f5d5d93;
+text-align: center;
+width: 150px;
+height: 100px;
+padding: 20px 10px 0 10px;
+transition: 2.5s;
+}
+.box:hover{
+    box-shadow:  2px 2px 15px #a8a0a093;
+
+
+
+}
+.box img{
+    width: 40px;
+    height: 40px;
+}
 /*-----------------------------Responsiveness----------------------------*/
 @media (max-width:700px) {
     *{
@@ -224,7 +307,6 @@ position: absolute;
 background: #1f232db0;
 height: 140vh;
 width: 200px;
-border-left: 2px solid gray;
 top: 0;
 right: -200px;
 text-align: left;
@@ -244,7 +326,7 @@ font-size: 25px;
 /*--------------Home section---------------*/
 #home{
     width: 100%;
-    height: 10vh;
+    height: 100vh;
 }
 .Image img{
   display: none;
@@ -274,7 +356,25 @@ font-size: 25px;
     font-size: 25px;
     text-align: center;
 }
+/*----------------About--------------*/
+.about-container{
+    flex-direction: row;
 
+}
+#about-btn{
+    width: 150px;
+    font-size: 14PX;
+    margin: 10px;
+}
+.about-image img{
+width: 250px;
+height:250px;
+
+}
+}
+/*------------------Skills---------*/
+.skills h1{
+    padding:30px 0 0 -5%;
 }
 
 /*______________________Animation_________________________*/
@@ -305,11 +405,11 @@ width: 100%;
 @keyframes onenter {
     0%{
         opacity: 0.2;
-     transform: translateX(100px);
+     transform: translateY(100px);
     }
     100%{
         opacity: 1;
-     transform: translateX(0px);
+     transform: translateY(0px);
 
     }
     
