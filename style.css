@@ -223,6 +223,9 @@ animation: onenter 1s  ease-in 0s;
     margin: 19px 0;
     opacity: 0.6;
     color:whitesmoke;
+    border: 1px solid #252727;
+    box-shadow: inset 2px 2px 10px #191b1b,inset 2px 2px 10px #191b1b;
+    
 }
 /*--------------Skills-------------*/
 .skills{
