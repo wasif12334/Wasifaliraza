@@ -269,57 +269,46 @@ transition: 2.5s;
     width: 40px;
     height: 40px;
 }
-/*------------Projects----------*/
-.projects{
-    width: 100%;
-    height: 115vh;
-
-}
-.project-container{
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    border: 1px solid transparent;
-    box-shadow: 1px 1px 10px #464949;
-display: grid;
-grid-template-columns: repeat(4,1fr);
-text-align: center;
-column-gap: 15px;
-row-gap: 20px;
-padding: 10px;
-
-}
-.project-box{
-    width: 100%;
-    height: 330px;
-  border: 1px solid #1f232d1e;
+                 /*------------Projects----------*/
+.project{
+    width: 90%;
+    height: 100vh;
     
 }
-.project-box img{
-    width: 100%;height: 90%;
-}
-.project-box button{
-    width: 100%;
-    height: 10%;
-   background:#DC3545;
-    text-align: center;
-    color: wheat ;
-    font-size: 15px;
-    border: 0px;
-    box-shadow: 1px 1px 2px #ac3540;
-    font-weight: bold;
-    transition: all 3s;
-    border: 1px solid white;
-}
-
-.projects h1{
-    padding-left: 45%;    
+.project>h1{
+padding-left: 45%;    
 color: white;
 font-weight: 700;
 text-shadow: 1px 1px 10px rgba(245, 222, 179, 0.637);
 font-size: 30px;
-margin-bottom: 10px;
 }
+.project-box{
+    width: 90%;
+    height: 85vh;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+.project-img{
+    width: 1050px;
+    height: 500px;
+    border: 1px solid white;
+    margin: 15px 0 10px 50px ;
+    background-image: url(/Images/PROJECT1-image.png);
+    background-size: cover;
+    background-position: center;
+    flex-basis: 60%;
+
+}
+.project-content{
+    border: 1px solid #02E2F4;
+    margin: 15px 0 10px 50px ;
+    height: 500px;
+    color: white;
+
+}
+
+            
 /*----------------------Contacts---------------------*/
 .contact{
     width: 100%;
@@ -401,6 +390,7 @@ opacity: 0.9;
 nav .logo {
 font-size: 25px;
 flex-basis: 50%;
+margin-top: 20px; 
 
 }
 .logo h2{
@@ -516,11 +506,14 @@ height:250px;
     height: 100vh;
 }
 /*---------Project--------------*/
-.project-container{
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 5px;
-    row-gap: 5px;
+
 }
+.contact-content{
+font-size: 7px;
+justify-content: center;
+}
+.form-btn{
+   margin-left: 50px;
 }
 
 /*______________________Animation_________________________*/
