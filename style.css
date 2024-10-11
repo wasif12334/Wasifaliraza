@@ -108,6 +108,7 @@ margin: auto;
 color: white;
 padding: 40px;
 line-height: 35px;
+display: inline-block;
 }
 .Text h1 {
 font-size: 30px;
@@ -164,6 +165,15 @@ transition: 0.4s;
 background: #02E2F4;
 box-shadow: 1px 1px 12px #02E2F4, -1px -1px 12px #02E2F4;
 }
+#typinganimation{
+    animation: typing 4s steps(16,end) alternate-reverse infinite;
+    border-right:1px solid;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.parent{
+    display: inline-block;
+}
 
 /*---------------Image-subsection----------------*/
 .Image {
@@ -196,9 +206,16 @@ animation: onenter 1s  ease-in 0s;
 .about-image{
    flex-basis :30%;
  margin-top: 50px;
-  
+filter: grayscale(1);
     height: 100%;
     text-align: center;
+    transition: 1s;
+   
+}
+.about-image:hover{
+    filter: grayscale(0);
+   
+ 
 }
 .about-content{
  flex-basis: 45%;
@@ -337,6 +354,7 @@ border: 1px solid transparent;
     font-weight: bold;
     letter-spacing: 5px;
     margin-left: 130px;
+    font-size: 25px;
 }
 form{
     border: 1px solid  gray;
@@ -369,6 +387,7 @@ input ,textarea{
     border: none;
     border-radius: 50px;
     border: 0px solid;
+    float: right;
 
 }
 .form-btn:hover{
