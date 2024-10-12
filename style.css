@@ -198,7 +198,7 @@ animation: onenter 1s  ease-in 0s;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 250px;
+    height: 100vh;
     flex-wrap: wrap;
     height: 80vh;
     color: #fff;
@@ -348,7 +348,7 @@ border: 1px solid transparent;
 .contact-content{
     color: #cac9c9;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 .contact-content>h2{
     font-weight: bold;
@@ -387,7 +387,7 @@ input ,textarea{
     border: none;
     border-radius: 50px;
     border: 0px solid;
-    float: right;
+    margin-left: 640px;
 
 }
 .form-btn:hover{
@@ -399,6 +399,15 @@ input ,textarea{
 ::placeholder{
 color:white ;
 opacity: 0.9;
+}
+.footer{
+    color: white;
+    font-size: 14px;
+    margin-left: 45%;
+    margin-bottom: 10px;
+}
+.footer>i{
+    color: #02E2F4;
 }
 /*-----------------------------Responsiveness----------------------------*/
 @media (max-width:800px) {
@@ -501,9 +510,12 @@ font-size: 25px;
 /*----------------About--------------*/
 .About{
     height: 100vh;
+    border: 1px solid white;
 }
+
 .about-container{
     flex-direction: row;
+    height: 100vh;
 
 }
 #about-btn{
@@ -512,8 +524,8 @@ font-size: 25px;
     margin: 10px;
 }
 .about-image img{
-width: 250px;
-height:250px;
+width: 200px;
+height:200px;
 
 }
 
@@ -525,15 +537,35 @@ height:250px;
     height: 100vh;
 }
 /*---------Project--------------*/
+.contact-content>h2{
+    font-size: 16px;
+    margin-top: 40px;
+   
+    
+    }
 
+    .form-btn{
+       margin-left: 0px;
+       margin-right:10px;;
+       
+    }
+    .form{
+        margin-right: 100px;
+        
+    }
+.contact{
+    height: 140vh;
 }
-.contact-content{
-font-size: 7px;
-justify-content: center;
+/* foooter */
+.footer{
+    color: white;
+    font-size: 12px;
+    margin-left: 40%;
+    margin-bottom: 5px;
+    height: 10px;
 }
-.form-btn{
-   margin-left: 50px;
 }
+
 
 /*______________________Animation_________________________*/
 /*Nav-links-----*/
